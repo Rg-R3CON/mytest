@@ -1,7 +1,7 @@
 <?php
 session_start();
 //create a constant variable to home page path.this method we can use to store image link.
-define('SITEURL', 'http://localhost/ecomphp/web-design-course-restaurant/');
+define('SITEURL', 'http://localhost/ecom-php/php-ecom/web-design-course-restaurant/');
 
 $sname= "localhost";
 $uname= "root";

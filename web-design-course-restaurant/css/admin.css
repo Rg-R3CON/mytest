@@ -100,14 +100,21 @@ table tr td {
     float: left;
 }
 
-
-
-
-
-
 /* css for footer */
 
 .footer{
     background-color: #ff4757;
     color: white;
+}
+
+/* for login page */
+
+
+.login{
+    border: 1px solid grey;
+    width: 30%;
+    margin: 5% auto;
+    padding: 2%;
+    
+
 }

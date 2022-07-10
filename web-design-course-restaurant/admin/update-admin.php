@@ -16,7 +16,8 @@
                         $rows=mysqli_fetch_assoc($res);
                         $full_name=$rows['full_name'];
                         $username=$rows['username'];
-                       }else{
+                        $password=$rows['password'];
+                    }else{
                            $_SESSION['update'] = "failed to delete admin";
               header('location:'.SITEURL.'admin/manage-admin.php');
 
@@ -36,6 +37,11 @@
             <td>username:</td>
             <td><input type="text" name="username" value="<?php echo $username;?>"></td>
         </tr>
+
+        <tr>
+            <td>Password:</td>
+            <td><input type="text" name="password" value="<?php echo $password;?>"></td>
+        </tr>
         
           <tr>
             <td colspan="2">
@@ -52,10 +58,11 @@ if(isset($_POST['submit'])){
     $id = $_POST['id'];
     $full_name = $_POST['full_name'];
     $username = $_POST['username'];
-
+    $password = $_POST['password'];
     $sql = "UPDATE tbl_admin SET 
             full_name = '$full_name' ,
-            username = '$username' WHERE id='$id' " ;
+            username = '$username' ,
+            password = '$password'  WHERE id='$id' " ;
 
     $res = mysqli_query($conn, $sql);
     if($res == TRUE){

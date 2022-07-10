@@ -1,4 +1,11 @@
-<?php include('../config/connection.php'); ?>
+<?php
+ include('../config/connection.php'); 
+ include('login-check.php'); 
+
+
+
+?>
+
 
 <!DOCTYPE html>
 <html lang="en">
@@ -18,6 +25,8 @@
                 <li><a href="index.php">Home</a></li>
                 <li><a href="manage-admin.php">Admin</a></li>
                 <li><a href="manage-category.php">Category</a></li>
+                 <li><a href="logout.php">logout</a></li>
+
             </ul>
         </div>
             

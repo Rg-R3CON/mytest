@@ -111,10 +111,12 @@ table tr td {
 
 
 .login{
-    border: 1px solid grey;
-    width: 30%;
-    margin: 5% auto;
-    padding: 2%;
+    border: 2px solid grey;
+    width: 35%;
+   margin: 5% auto;
+    padding: 2%; 
+    justify-content: center;
+    align-items: center;
     
 
 }
